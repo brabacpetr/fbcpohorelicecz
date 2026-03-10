@@ -377,7 +377,7 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
 }
 .training__table tbody tr:nth-child(odd) { background: #161616; }
 .training__table tbody tr:nth-child(even) { background: var(--bg-card); }
-.training__table .time { color: var(--accent-light); font-weight: 600; }
+.training__table .time { color: var(--accent-light); }
 .training__table .location { color: var(--text-secondary); }
 
 .training__map {
