@@ -410,6 +410,74 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
 }
 
 /* ==========================================================================
+   TRENÉŘI
+   ========================================================================== */
+.coaches {
+  padding: var(--section-padding);
+  background: var(--bg-primary);
+}
+.coaches h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.coaches__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.coach-card {
+  background: var(--bg-card);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-card);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.coach-card__category {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-light);
+}
+.coach-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.coach-card__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+.coach-card__contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+  word-break: break-all;
+}
+.coach-card__contact svg {
+  flex-shrink: 0;
+  color: var(--accent-light);
+}
+.coach-card__contact:hover {
+  color: var(--text-primary);
+}
+
+/* ==========================================================================
    NÁBOR
    ========================================================================== */
 .recruitment {
@@ -708,6 +776,7 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
    ========================================================================== */
 @media (max-width: 1024px) {
   :root { --section-padding: 80px 0; }
+  .coaches__grid { grid-template-columns: repeat(2, 1fr); }
   .training__grid { grid-template-columns: 1fr; }
   .training__map iframe { min-height: 300px; }
   .about__grid { gap: 40px; }
@@ -716,6 +785,7 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
 
 @media (max-width: 768px) {
   :root { --section-padding: 60px 0; }
+  .coaches__grid { grid-template-columns: 1fr; }
 
   /* Nav mobile */
   .nav__links {
