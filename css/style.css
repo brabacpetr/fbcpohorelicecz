@@ -301,6 +301,36 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
 }
 
 /* ==========================================================================
+   ZÁPASY
+   ========================================================================== */
+.matches {
+  padding: var(--section-padding);
+  background: var(--bg-alt);
+  text-align: center;
+}
+.matches__content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.matches h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.matches__desc {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-size: 1rem;
+}
+.matches__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================================================
    TRÉNINKY
    ========================================================================== */
 .training {
@@ -722,6 +752,18 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
     grid-template-columns: 1fr;
   }
 
+  /* Training table */
+  .training__table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .training__table th,
+  .training__table td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
   /* Disable parallax */
   .recruitment {
     background-attachment: scroll;
@@ -740,6 +782,11 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
     gap: 24px;
   }
   .footer__brand {
+    justify-content: center;
+  }
+  .footer__links {
+    flex-wrap: wrap;
+    gap: 12px 16px;
     justify-content: center;
   }
   .footer__socials {
