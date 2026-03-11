@@ -888,3 +888,77 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
     height: 40px;
   }
 }
+
+/* ── SOUPISKY ─────────────────────────────── */
+.rosters { background: var(--bg-primary); padding: var(--section-padding);}
+.rosters h2 { text-align: center; }
+
+.rosters__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.roster-card {
+  background: var(--bg-card);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-card);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.roster-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.roster-card__btn { width: 100%; text-align: center; }
+
+@media (max-width: 1024px) {
+  .rosters__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .rosters__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── FOTOGALERIE ──────────────────────────── */
+.gallery { background: var(--bg-secondary); padding: var(--section-padding)}
+
+.gallery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery__content h2 { margin-bottom: 0; }
+
+.gallery__text {
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 16px 0 0;
+}
+
+.gallery__buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery__buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
