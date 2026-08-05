@@ -598,13 +598,17 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
   gap: 16px;
   margin-bottom: 56px;
 }
-.sponsors__general-label {
+.sponsors__tier-label {
   font-family: var(--font-heading);
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text-secondary);
+}
+.sponsors__tier-label--list {
+  display: block;
+  margin-bottom: 20px;
 }
 .sponsors__grid {
   display: flex;
