@@ -631,6 +631,28 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
   max-height: 240px;
   border-radius: 12px;
 }
+.sponsors__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  list-style: none;
+  margin: 0 0 48px;
+  padding: 0;
+}
+.sponsors__list li {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+.sponsors__list li:hover {
+  color: var(--text-primary);
+}
 .sponsors__cta {
   color: var(--text-secondary);
   font-size: 1rem;
