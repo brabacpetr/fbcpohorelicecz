@@ -606,12 +606,6 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
   text-transform: uppercase;
   color: var(--text-secondary);
 }
-.sponsor-logo--general {
-  filter: none;
-  opacity: 1;
-  max-height: 240px;
-  border-radius: 12px;
-}
 .sponsors__grid {
   display: flex;
   justify-content: center;
@@ -629,6 +623,13 @@ button, input, textarea { font-family: inherit; border: none; outline: none; }
 .sponsor-logo:hover {
   filter: grayscale(0%);
   opacity: 1;
+}
+.sponsor-logo--general {
+  filter: none;
+  opacity: 1;
+  width: auto;
+  max-height: 240px;
+  border-radius: 12px;
 }
 .sponsors__cta {
   color: var(--text-secondary);
